@@ -5,88 +5,253 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garbage Tracker - Privacy Policy</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        h1 { color: #4CAF50; margin-bottom: 10px; }
-        h2 { color: #333; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; margin-top: 30px; }
-        .highlight { 
-            background-color: #e8f5e8; 
-            padding: 20px; 
-            border-radius: 10px; 
-            margin: 20px 0;
-            border-left: 4px solid #4CAF50;
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
-        .contact {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 30px;
+        
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f9f0 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #4CAF50;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.1);
+        }
+        
+        .highlight h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin: 35px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+            display: inline-block;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin: 8px 0;
+            color: #34495e;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #dee2e6;
+        }
+        
+        .contact-box h2 {
+            border: none;
+            margin-bottom: 15px;
+        }
+        
+        .privacy-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .feature-card p {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .privacy-features {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for Garbage Tracker</h1>
-    <p><strong>Last updated:</strong> December 2024</p>
-    
-    <div class="highlight">
-        <h3>🔒 Your Privacy is Protected</h3>
-        <p><strong>Simple Summary:</strong> Garbage Tracker does not collect, store, or share any of your personal data with anyone. Everything stays on your device, period.</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ Garbage Tracker</h1>
+            <p>Privacy Policy - Your Data Stays Private</p>
+        </div>
+        
+        <div class="content">
+            <div class="highlight">
+                <h3>🔒 Complete Privacy Protection</h3>
+                <p><strong>Simple Promise:</strong> Garbage Tracker never collects, stores, or shares any of your personal data. Everything stays on your device, always.</p>
+            </div>
 
-    <h2>What Information We Collect</h2>
-    <p><strong>None.</strong> Garbage Tracker does not collect any personal information, usage data, or analytics. The app works entirely offline without any internet connection required.</p>
+            <div class="privacy-features">
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3>Local Storage Only</h3>
+                    <p>All your schedules and settings stay on your device</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🚫</span>
+                    <h3>No Data Collection</h3>
+                    <p>We don't collect any personal information whatsoever</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🔐</span>
+                    <h3>No Internet Required</h3>
+                    <p>Works completely offline - no data transmission</p>
+                </div>
+            </div>
 
-    <h2>How Your Data is Stored</h2>
-    <ul>
-        <li><strong>Pickup Schedules:</strong> Stored locally on your device using iOS secure storage</li>
-        <li><strong>Custom Waste Types:</strong> Stored locally on your device only</li>
-        <li><strong>Notification Settings:</strong> Stored locally on your device only</li>
-        <li><strong>App Preferences:</strong> Stored locally on your device only</li>
-    </ul>
-    <p><strong>Important:</strong> If you delete the app, all your data is permanently deleted with it. We cannot recover it because we never had access to it.</p>
+            <h2>What Information We Collect</h2>
+            <p><strong>None.</strong> Garbage Tracker does not collect any personal information, usage data, analytics, or any other data. The app works entirely offline without requiring an internet connection.</p>
 
-    <h2>Notifications</h2>
-    <p>The app requests permission to send local notifications to remind you about garbage pickups. These notifications are:</p>
-    <ul>
-        <li>Generated locally on your device</li>
-        <li>Do not transmit any data to external servers</li>
-        <li>Can be disabled at any time in iOS Settings</li>
-    </ul>
+            <h2>How Your Data is Stored</h2>
+            <ul>
+                <li><strong>Pickup Schedules:</strong> Stored locally using iOS secure storage</li>
+                <li><strong>Custom Waste Types:</strong> Stored locally on your device only</li>
+                <li><strong>Notification Settings:</strong> Stored locally on your device only</li>
+                <li><strong>App Preferences:</strong> Stored locally on your device only</li>
+            </ul>
+            <p><strong>Important:</strong> If you delete the app, all data is permanently deleted. We cannot recover it because we never had access to it.</p>
 
-    <h2>Data Sharing</h2>
-    <p><strong>We don't share anything because we don't collect anything.</strong> Your garbage pickup schedule is completely private and stays only on your device.</p>
+            <h2>Notifications</h2>
+            <p>The app requests permission to send local notifications for garbage pickup reminders. These notifications:</p>
+            <ul>
+                <li>Are generated locally on your device</li>
+                <li>Do not transmit any data to external servers</li>
+                <li>Can be disabled anytime in iOS Settings</li>
+                <li>Contain only the pickup information you entered</li>
+            </ul>
 
-    <h2>Third-Party Services</h2>
-    <p>Garbage Tracker does not use any third-party analytics, advertising, or tracking services. No data is transmitted to any external services.</p>
+            <h2>Data Sharing</h2>
+            <div class="highlight">
+                <p><strong>We don't share anything because we don't collect anything.</strong> Your garbage pickup schedule is completely private and remains only on your device.</p>
+            </div>
 
-    <h2>Children's Privacy</h2>
-    <p>Our app is completely safe for users of all ages as it does not collect any personal information whatsoever.</p>
+            <h2>Third-Party Services</h2>
+            <p>Garbage Tracker does not use any third-party analytics, advertising, tracking, or data collection services. No data is transmitted to any external services or companies.</p>
 
-    <h2>Data Security</h2>
-    <p>Since all data remains on your device using iOS secure storage, your information is protected by your device's built-in security features including device passcode, Touch ID, or Face ID.</p>
+            <h2>Children's Privacy</h2>
+            <p>Our app is completely safe for users of all ages as it does not collect any personal information whatsoever. No special parental controls are needed.</p>
 
-    <h2>Your Rights</h2>
-    <p>Since we don't collect your data, there's nothing for us to delete, modify, or export. You have complete control over your data directly through the app.</p>
+            <h2>Data Security</h2>
+            <p>Since all data remains on your device using iOS secure storage mechanisms, your information is protected by your device's built-in security features including device passcode, Touch ID, or Face ID.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>If we make changes to this privacy policy, we will update the "Last updated" date above and notify users through app updates if necessary.</p>
+            <h2>Your Rights</h2>
+            <p>Since we don't collect your data, there's nothing for us to delete, modify, or export. You have complete control over your data directly through the app interface.</p>
 
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this privacy policy or the app, please contact us at:</p>
-        <p><strong>Email:</strong> [your-email@example.com]</p>
-        <p><strong>App:</strong> Garbage Tracker</p>
-    </div>
+            <h2>Changes to This Policy</h2>
+            <p>If we make changes to this privacy policy, we will update this page and notify users through app updates if necessary. The "Last updated" date will reflect any changes.</p>
 
-    <div class="highlight">
-        <h3>🌱 Built with Privacy in Mind</h3>
-        <p>Garbage Tracker was designed from the ground up to respect your privacy. Your pickup schedule is personal information that should stay personal - and with our app, it does.</p>
+            <div class="contact-box">
+                <h2>📧 Contact Us</h2>
+                <p>If you have any questions about this privacy policy or the app:</p>
+                <p><strong>Email:</strong> [your-email@example.com]</p>
+                <p><strong>App:</strong> Garbage Tracker for iOS</p>
+            </div>
+
+            <div class="highlight">
+                <h3>🌱 Privacy by Design</h3>
+                <p>Garbage Tracker was built from the ground up with privacy as our top priority. Your pickup schedule is personal information that should stay personal - and with our app, it absolutely does.</p>
+            </div>
+            
+            <p style="text-align: center; color: #6c757d; margin-top: 40px; font-size: 0.9em;">
+                <strong>Last updated:</strong> December 2024
+            </p>
+        </div>
     </div>
 </body>
 </html>
